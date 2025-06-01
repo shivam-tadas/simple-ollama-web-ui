@@ -1,0 +1,4 @@
+# Do not consider node_modules for both frontend and backend
+
+/backend/node_modules
+/frontend/node_modules
