@@ -11,7 +11,7 @@ app.post('/generate', (req, res) => {
   const prompt = req.body.prompt;
   const ollama = spawn('ollama', ['run', 'llama3.2:latest']);
   let response = '';
-  
+
   ollama.stdout.on('data', (data) => {
     response += data.toString();
   });
@@ -24,6 +24,6 @@ app.post('/generate', (req, res) => {
 
 });
 
-app.listen(3001, () => {
-  console.log('Backend running on http://localhost:3001');
+app.listen(3005, () => {
+  console.log('Backend running on http://localhost:3005');
 });
