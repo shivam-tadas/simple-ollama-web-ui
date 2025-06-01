@@ -43,13 +43,13 @@ function App() {
                 <path fillRule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clipRule="evenodd" />
               </svg>
             </div>
-            <h1 className="text-3xl font-light text-gray-800">Llama Chat</h1>
+            <h1 className="text-3xl font-light text-gray-800">Ollama Web UI</h1>
           </div>
-          <p className="text-gray-600 text-sm">Powered by Llama3.2 • Running locally</p>
+          <p className="text-gray-600 text-sm">• Powered by Llama3.2 •</p>
         </div>
 
         {/* Chat Container */}
-        <div className="bg-white rounded-2xl shadow-sm border border-green-100 overflow-hidden">
+        <div className="bg-white rounded-2xl shadow-xl border border-green-100 overflow-hidden">
           
           {/* Input Section */}
           <div className="p-6 border-b border-green-50">
@@ -104,7 +104,7 @@ function App() {
                   Response
                 </div>
                 <div className="bg-green-50 rounded-xl p-4 border-l-4 border-green-500">
-                  <pre className="whitespace-pre-wrap text-gray-700 text-sm leading-relaxed font-mono">
+                  <pre className="whitespace-pre-wrap text-gray-700 text-xs leading-relaxed font-sans">
                     {response}
                   </pre>
                 </div>
@@ -125,7 +125,7 @@ function App() {
 
         {/* Footer */}
         <div className="text-center mt-6 text-xs text-gray-400">
-          Local AI • Private & Secure • No data sent to external servers
+          Local LLM • Private • No data sent to external servers
         </div>
       </div>
     </div>
