@@ -56,6 +56,7 @@ function App() {
             <div className="relative">
               <textarea
                 className="w-full p-4 pr-12 border border-green-200 rounded-xl resize-none focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-200 placeholder-gray-400 text-gray-700"
+                style={{fontFamily: 'Inter'}}
                 rows="3"
                 value={prompt}
                 onChange={(e) => setPrompt(e.target.value)}
@@ -104,7 +105,7 @@ function App() {
                   Response
                 </div>
                 <div className="bg-green-50 rounded-xl p-4 border-l-4 border-green-500">
-                  <pre className="whitespace-pre-wrap text-gray-700 text-xs leading-relaxed font-sans">
+                  <pre className="whitespace-pre-wrap text-gray-700 text-xs leading-relaxed" style={{fontFamily: 'Inter'}}>
                     {response}
                   </pre>
                 </div>
